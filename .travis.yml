@@ -1,0 +1,8 @@
+
+install:
+    - ./texlive-install.sh
+    - export PATH="$PATH:$HOME/texlive/bin/x86_64-linux"
+    - tlmgr install wrapfig
+
+script:
+- pdflatex file.tex
